@@ -1,6 +1,9 @@
 ---
 name: make-digest
 description: Analyze a raw prompt into a research digest with technique tone shot composition keywords and append one mapping row. Use when writing a digest, phan tich prompt, or updating mapping.md.
+metadata:
+  version: "1.0.0"
+  updated: "2026-09-29"
 ---
 
 # Make Digest

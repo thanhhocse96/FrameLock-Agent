@@ -8,7 +8,7 @@
 work/<provider>/README.md      ← setup, auth, workflow (commit)
 work/<provider>/INDEX.md       ← index experiment, 1 dòng/lần chạy (commit)
 work/<provider>/models/<model>.md + .params.example.json   ← doc model (commit)
-work/<provider>/run_<model>.py ← script chạy, key từ env (commit, không chứa key)
+workflows/<platform>/run_<model>.py ← script chạy, key từ env (commit; skill điều phối, chạy trên WSL)
 .local/work/<provider>/<YYYY-MM-DD-slug>/
   input.md | params.json | output/ | result.md | run.log   (gitignored)
 ```

@@ -1,6 +1,9 @@
 ---
 name: add-raw
 description: Copy an influencer prompt verbatim into research images or videos raws with source URL and date. Use when adding a raw prompt, thu thap prompt, or starting the raw-to-digest pipeline.
+metadata:
+  version: "1.0.0"
+  updated: "2026-09-29"
 ---
 
 # Add Raw

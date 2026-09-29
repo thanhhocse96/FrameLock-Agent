@@ -1,6 +1,9 @@
 ---
 name: make-template
 description: Forge a reusable prompt template from digests, test-fill it, and index it in templates Index.md. Use when creating a template, duc cong thuc, or merging from drafts.
+metadata:
+  version: "1.0.0"
+  updated: "2026-09-29"
 ---
 
 # Make Template

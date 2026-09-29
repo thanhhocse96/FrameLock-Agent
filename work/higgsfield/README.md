@@ -1,15 +1,16 @@
 # work/higgsfield — chạy thử Higgsfield AI (text/image-to-video)
 
-> Chỉ commit cấu trúc + docs + script. Mọi input đã chạy, output, key → `.local/work/higgsfield/` (gitignored).
+> Script chạy đã move sang `workflows/higgsfield/` (platform dir, skill `higgsfield-run` điều phối, **chạy trên WSL**).
+> Thư mục này giữ docs + models + INDEX. Mọi input đã chạy, output, key → `.local/work/higgsfield/` (gitignored).
 
 ## Models đã setup
 
 | Model | Doc | Params mẫu | Script |
 |-------|-----|------------|--------|
-| MiniMax H3 (`minimax/h3/text-to-video`, 2K, 5–15s) | `models/minimax-h3.md` | `models/minimax-h3.params.example.json` | `run_minimax_h3.py` |
-| Soul 2 (`higgsfield-ai/soul/v2/standard`, text-to-image, keyframes) | `models/soul-v2.md` | `models/soul-v2.params.example.json` | `run_soul_v2.py` |
-| Grok Imagine 2.0 (`xai/grok-imagine-image-2.0`, edit + text-to-image, giữ ref) | `models/grok-imagine-2.0.md` | `models/grok-imagine-2.0.params.example.json` | `run_grok_imagine_20.py` |
-| Marketing Studio Image (`marketing-studio/image`, campaign edit, giữ ref) | `models/marketing-studio-image.md` | `models/marketing-studio-image.params.example.json` | `run_marketing_studio_image.py` |
+| MiniMax H3 (`minimax/h3/text-to-video`, 2K, 5–15s) | `models/minimax-h3.md` | `models/minimax-h3.params.example.json` | `../../workflows/higgsfield/run_minimax_h3.py` |
+| Soul 2 (`higgsfield-ai/soul/v2/standard`, text-to-image, keyframes) | `models/soul-v2.md` | `models/soul-v2.params.example.json` | `../../workflows/higgsfield/run_soul_v2.py` |
+| Grok Imagine 2.0 (`xai/grok-imagine-image-2.0`, edit + text-to-image, giữ ref) | `models/grok-imagine-2.0.md` | `models/grok-imagine-2.0.params.example.json` | `../../workflows/higgsfield/run_grok_imagine_20.py` |
+| Marketing Studio Image (`marketing-studio/image`, campaign edit, giữ ref) | `models/marketing-studio-image.md` | `models/marketing-studio-image.params.example.json` | `../../workflows/higgsfield/run_marketing_studio_image.py` |
 
 ## Setup (1 lần, machine-local)
 
@@ -25,9 +26,9 @@
 ## Workflow mỗi experiment
 
 1. Chọn template nguồn từ `templates/Index.md` (prompt EN) → fill biến.
-2. Copy `models/minimax-h3.params.example.json` thành params thật, chạy script:
+2. Copy `models/minimax-h3.params.example.json` thành params thật, chạy script **trên WSL**:
    ```powershell
-   python work/higgsfield/run_minimax_h3.py --params <params.json> --outdir .local/work/higgsfield/<YYYY-MM-DD-slug>
+   wsl -d Debian -- python3 workflows/higgsfield/run_minimax_h3.py --params <params.json> --outdir .local/work/higgsfield/<YYYY-MM-DD-slug>
    ```
    Script tự ghi `input.md` + `params.json` + `run.log` vào outdir, tải video vào `output/`.
 3. Gọi API (đường script), lưu media vào `output/`, log vào `run.log`.

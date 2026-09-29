@@ -17,7 +17,7 @@ Thu thập cách influencer xây dựng prompt (ảnh + video) → reverse-engin
 | research-images | `research/images/{raws/,digests/,mapping.md}` | `.context/modules/research-images.md` |
 | research-videos | `research/videos/{raws/,digests/,mapping.md}` | `.context/modules/research-videos.md` |
 | templates | `templates/{images/,videos/,drafts/,Index.md}` | `.context/modules/templates.md` |
-| work-apis | `work/<provider>/{README.md,INDEX.md}` (structure-only) + `.local/work/<provider>/<slug>/` (sản phẩm) | `.context/modules/work-apis.md` |
+| work-apis | `work/<provider>/{README.md,INDEX.md,models/}` (docs) + `workflows/<platform>/*.py` (scripts, chạy trên WSL) + `.local/work/<provider>/<slug>/` (sản phẩm) | `.context/modules/work-apis.md` |
 | docs human | `docs/README.md` | Chỉ load khi task docs |
 
 ## Invariants (tóm tắt — chi tiết ở `AGENTS.md` §2)
