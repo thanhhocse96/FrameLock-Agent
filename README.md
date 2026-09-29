@@ -13,9 +13,9 @@ Thu thập cách influencer xây dựng prompt → phân tích thành digest (k�
 | `research/images/` | Prompt ảnh: `raws/` + `digests/` + `mapping.md` |
 | `research/videos/` | Prompt video: `raws/` + `digests/` + `mapping.md` |
 | `templates/` | Prompt context/template tái dùng, index ở `Index.md` |
-| `work/<provider>/` | Chạy thử API (chỉ `README.md` + `INDEX.md`); sản phẩm ở `.local/work/` |
+| `workflows/<platform>/` | Chạy thử API: script + docs + `models/` + `INDEX.md` (chạy trên WSL); sản phẩm ở `.local/work/` |
 | `docs/README.md` | Index docs human |
-| `.local/` | Scratch + media mẫu local + sản phẩm `work/` (không commit) |
+| `.local/` | Scratch + media mẫu local + sản phẩm `workflows/` (không commit) |
 
 ```
 AI-GAN/
@@ -26,7 +26,7 @@ AI-GAN/
     images/{raws/,digests/,mapping.md}
     videos/{raws/,digests/,mapping.md}
   templates/{images/,videos/,drafts/,Index.md}
-  work/<provider>/{README.md,INDEX.md}   ← structure-only
+  workflows/<platform>/{README.md,INDEX.md,models/,*.py}   ← chạy trên WSL
   docs/README.md
   .local/                  ← gitignored (+ work/<provider>/<slug>/ sản phẩm)
 ```

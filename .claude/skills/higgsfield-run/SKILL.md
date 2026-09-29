@@ -2,7 +2,7 @@
 name: higgsfield-run
 description: Run a Higgsfield text or image-to-video experiment via the committed scripts, log to local work dir, and index one row in work INDEX.md. Use when running higgsfield, chay thu API, experiment video, or promoting output to research.
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
   updated: "2026-09-29"
 ---
 
@@ -22,10 +22,10 @@ Venv/key/toolchain (machine-local): `.local/ENVIRONMENT.md`.
 
 ## Quy tắc (từ work/ + PITFALLS.md #9–#12)
 
-- Script commit trong repo: `workflows/higgsfield/run_minimax_h3.py`, `run_soul_v2.py`, `run_grok_imagine_20.py`, `run_marketing_studio_image.py`, `upload_asset.py` + `work/higgsfield/models/*.params.example.json`. Key chỉ từ env (`HF_KEY`, `HF_CREDENTIALS`) hoặc `.local/work/higgsfield/.env` — cấm paste key vào repo.
+- Script commit trong repo: `workflows/higgsfield/run_minimax_h3.py`, `run_soul_v2.py`, `run_grok_imagine_20.py`, `run_marketing_studio_image.py`, `upload_asset.py` + `workflows/higgsfield/models/*.params.example.json`. Key chỉ từ env (`HF_KEY`, `HF_CREDENTIALS`) hoặc `.local/work/higgsfield/.env` — cấm paste key vào repo.
 - Sản phẩm mỗi lần chạy → `.local/work/higgsfield/<YYYY-MM-DD-slug>/` (`input.md` prompt EN, `params.json`, `output/`, `result.md` VI, `run.log`). Không commit media/key.
 - `params.json` tối thiểu: model+version, prompt_source (template/digest đã fill), seed, size, duration_sec.
-- Mỗi lần chạy thêm 1 dòng `work/higgsfield/INDEX.md`. Output tốt → promote: copy prompt EN vào `research/*/raws/` (ghi nguồn là experiment path) → skill `add-raw`/`make-digest` tiếp. Không trỏ digest trực tiếp vào `.local/`.
+- Mỗi lần chạy thêm 1 dòng `workflows/higgsfield/INDEX.md`. Output tốt → promote: copy prompt EN vào `research/*/raws/` (ghi nguồn là experiment path) → skill `add-raw`/`make-digest` tiếp. Không trỏ digest trực tiếp vào `.local/`.
 - Gen thường dùng script; MCP Higgsfield (`opencode.json` → `https://mcp.higgsfield.ai/mcp`, OAuth) chỉ khi cần `create_character`/Soul ID hoặc lục history.
 
 ## Các bước

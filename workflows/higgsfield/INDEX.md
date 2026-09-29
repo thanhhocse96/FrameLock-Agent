@@ -41,5 +41,7 @@
 | `.local/work/higgsfield/2026-09-28-clip3` | 2026-09-28 | minimax/h3/image-to-video (2K, 5s, K5→K6) | Clip 3 (vòng năng lượng → sôi) | completed, video đã tải, chờ user duyệt | — |
 | `.local/work/higgsfield/2026-09-28-clip4` | 2026-09-28 | minimax/h3/image-to-video (2K, 8s, K6→K7) | Clip 4 (pull-back lộ chị + túi) | completed, video đã tải, chờ user duyệt | — |
 | `.local/work/higgsfield/2026-09-28-clip1cd` | 2026-09-28 | minimax/h3/image-to-video (2K, 5s, K1c→K1d) | Clip 1cd (dĩa morph nồi, neo dòng chảy + arc top-down) | completed, video đã tải, chờ user duyệt | — |
+| `.local/work/higgsfield/2026-09-28-clip1bc` | 2026-09-28 | minimax/h3/image-to-video (2K, 5s, K1b→K1c) | Clip 1bc (tạt xuống + hũ hiện) | failed nsfw (kiểm duyệt nhầm), xem retry | — |
+| `.local/work/higgsfield/2026-09-28-clip1bc-retry` | 2026-09-28 | minimax/h3/image-to-video (2K, 5s, K1b→K1c) | Clip 1bc retry (mềm từ ngữ, hũ hiện trong sương) | completed, video đã tải, chờ user duyệt | — |
 
 Cột Promote?: `không` / `research/videos/raws/<file>` (khi output tốt và đã copy prompt vào kho).

@@ -18,7 +18,7 @@ Mỗi phiên mới, đọc theo thứ tự:
 6. `.context/PITFALLS.md` — bẫy đã biết (prompt copy, mapping lệch, curios)
 7. `.context/modules/<module>.md` — chỉ module liên quan task (`research-images`, `research-videos`, `templates`, `work-apis`)
 
-Không load mặc định: `research/**/raws/*` (raw prompt text dài), `research/**/digests/*` (chỉ load entry được `mapping.md` trỏ tới), `work/*/INDEX.md` (chỉ load dòng experiment liên quan task), `.local/work/**` (sản phẩm local, không load), `docs/` human (chỉ khi task docs).
+Không load mặc định: `research/**/raws/*` (raw prompt text dài), `research/**/digests/*` (chỉ load entry được `mapping.md` trỏ tới), `workflows/*/INDEX.md` (chỉ load dòng experiment liên quan task), `.local/work/**` (sản phẩm local, không load), `docs/` human (chỉ khi task docs).
 
 ## §2 Invariants
 
@@ -33,7 +33,7 @@ Không load mặc định: `research/**/raws/*` (raw prompt text dài), `researc
 | 7 | **Governance-only-when-mentioned** — không sửa `AGENTS.md`/`.context/` nếu phiên không yêu cầu rõ |
 | 8 | **Ngôn ngữ** — phân tích tiếng Việt, prompt tiếng Anh: digest + mapping + hướng dẫn fill + `Index.md` viết tiếng Việt; quote prompt gốc giữ tiếng Anh; **prompt mẫu trong template và mọi prompt kết quả khi được yêu cầu gen đều xuất tiếng Anh** (biến template đặt tên EN `UPPER_SNAKE` như `[SUBJECT]`) |
 | 9 | **Bản quyền + nguồn** — mỗi raw ghi `Nguồn influencer/kênh + URL + ngày thu thập`; không re-post nguyên khối ra ngoài repo |
-| 10 | **work/ scripts + docs commit, sản phẩm ở .local** — `work/<provider>/` commit `README.md` + `INDEX.md` + script chạy (`run_*.py`, key từ env, không chứa key) + `models/` (doc + params mẫu); script do skill `higgsfield-run` điều phối (promote vào workflow). Mọi input đã chạy/output/log/key vào `.local/work/<provider>/<slug>/` (gitignored). Cấm API key trong `work/`, `research/`, `templates/` |
+| 10 | **workflows/ là nơi duy nhất cho chạy thử API, sản phẩm ở .local** — `workflows/<platform>/` commit `README.md` + `INDEX.md` + script chạy (`*.py`, key từ env, không chứa key) + `models/` (doc + params mẫu), chạy trên WSL; skill `higgsfield-run` điều phối. Mọi input đã chạy/output/log/key vào `.local/work/<provider>/<slug>/` (gitignored). Cấm API key trong `workflows/`, `research/`, `templates/` |
 
 ## §3 Tension format
 
@@ -56,6 +56,6 @@ Không load mặc định: `research/**/raws/*` (raw prompt text dài), `researc
 - [ ] Digest có link ngược về raw + từ khóa kỹ thuật/chủ đề/model?
 - [ ] Mapping đã thêm 1 dòng index cho digest mới?
 - [ ] Template mới đã được `templates/Index.md` trỏ tới?
-- [ ] Experiment API mới đã thêm 1 dòng `work/<provider>/INDEX.md` (không commit media/key)?
+- [ ] Experiment API mới đã thêm 1 dòng `workflows/<platform>/INDEX.md` (không commit media/key)?
 - [ ] Ngôn ngữ đúng (phân tích VI, prompt mẫu + prompt gen EN, biến `UPPER_SNAKE`)?
 - [ ] File `.context/` mới đúng subdir (không dump root)?
