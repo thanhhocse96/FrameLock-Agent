@@ -1,0 +1,20 @@
+.local/
+*.log
+.DS_Store
+Thumbs.db
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# Secrets (belt & braces — .local/ đã ignore toàn bộ)
+.env
+# Guard: work/ — chặn commit nhầm sản phẩm/key vào work/
+work/**/*.mp4
+work/**/*.mov
+work/**/*.webm
+work/**/*.png
+work/**/*.jpg
+work/**/*.webp
+work/**/.env
+work/**/output/

@@ -1,0 +1,17 @@
+{
+  "model": "marketing-studio/image",
+  "endpoint": "https://api.higgsfield.ai/marketing-studio/image",
+  "prompt": "Same kitchen, same black clay pot of caramelized braised fish with red chilies from the reference, but WITHOUT the woman and WITHOUT the product pouch: the pot sits alone simmering on the induction stove, gentle steam rising, same warm lighting and photorealistic style, clean 16:9 frame with no text",
+  "quality": "high",
+  "image_urls": [
+    "<public_url_ref_1>",
+    "<public_url_ref_2>"
+  ],
+  "moderation": "auto",
+  "resolution": "2k",
+  "aspect_ratio": "16:9",
+  "enhance_prompt": false,
+  "prompt_source": "templates/images/<slug>.md",
+  "keyframe": "K<int>-<mo-ta>",
+  "ref_roles": "ghi vai tro tung ref"
+}

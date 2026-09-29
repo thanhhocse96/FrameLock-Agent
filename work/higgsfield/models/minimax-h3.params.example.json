@@ -1,0 +1,11 @@
+{
+  "model": "minimax/h3/text-to-video",
+  "endpoint": "https://api.higgsfield.ai/minimax/h3/text-to-video",
+  "prompt": "A cinematic scene at sunset",
+  "duration": 5,
+  "resolution": "2K",
+  "aspect_ratio": "auto",
+  "aigc_watermark": false,
+  "prompt_source": "templates/videos/<slug>.md",
+  "seed": null
+}

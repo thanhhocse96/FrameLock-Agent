@@ -1,0 +1,15 @@
+{
+  "model": "xai/grok-imagine-image-2.0",
+  "endpoint": "https://api.higgsfield.ai/xai/grok-imagine-image-2.0",
+  "prompt": "Recreate this advertisement composition as a clean 16:9 frame with no black borders and no circular crop. Reference 1 sets the layout: smiling Vietnamese housewife in navy shirt holding a steaming clay pot of caramelized braised fish at center-right, product pouch standing on the left, bright modern kitchen. Reference 2 sets the product: keep the blue pouch, SK logo and all label text exactly. Overhead top-down fisheye feel, soft commercial lighting, appetizing TV commercial end card",
+  "quality": "medium",
+  "image_urls": [
+    "<public_url_anh_composite>",
+    "<public_url_anh_tui>"
+  ],
+  "resolution": "2k",
+  "aspect_ratio": "16:9",
+  "prompt_source": "Kịch bản cá đục kho tiêu shot-4 K7 (Bước 1 user duyệt 2026-09-28)",
+  "keyframe": "K7-shot-4-grok",
+  "ref_roles": "ref1 composite giữ bố cục; ref2 túi thật giữ bao bì + chữ"
+}

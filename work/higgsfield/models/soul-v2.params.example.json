@@ -1,0 +1,12 @@
+{
+  "model": "higgsfield-ai/soul/v2/standard",
+  "endpoint": "https://api.higgsfield.ai/higgsfield-ai/soul/v2/standard",
+  "prompt": "Overhead close-up of small silver fish, red chilies, green peppercorns and scallions arranged on a dark slate, glossy appetizing Vietnamese food photography, warm side light",
+  "seed": null,
+  "batch_size": 4,
+  "resolution": "1080p",
+  "aspect_ratio": "16:9",
+  "enhance_prompt": true,
+  "prompt_source": "templates/images/<slug>.md",
+  "keyframe": "K1-shot-1-start"
+}
