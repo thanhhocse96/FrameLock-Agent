@@ -66,6 +66,7 @@
 | `.local/work/higgsfield/2026-09-29-soche-clips/clipE` | 2026-09-29 | minimax/h3/image-to-video (2K, 5s, 9:16, Frame5→Frame6) | Clip E chốt nồi sống | completed, video đã tải (4.4MB), **user không chốt** (thay bằng S7 bưng tộ) | — |
 | `.local/work/higgsfield/2026-09-29-soche-clips/clipF` (Frame6→Frame7) | 2026-09-30 | minimax/h3/image-to-video (2K, 5s, 9:16) | Clip F bưng tộ sang bếp | completed sau topup (req 872507fc), video đã tải (6.5MB), chờ user duyệt | — |
 | `.local/work/higgsfield/2026-09-29-soche-clips/clipG` (Frame7→Frame8) | 2026-09-30 | minimax/h3/image-to-video (2K, 8s, 9:16) | Clip G chốt hero (nấu chín + halftone + túi) | completed (req 8a2382a0), video đã tải (11.8MB), chờ user duyệt | — |
+| `.local/work/higgsfield/2026-09-30-recraft-utility` | 2026-09-30 | recraft/v4.1/utility/text-to-image | — | chưa chạy (chờ topup/key) | — |
 
 > Vị trí file dùng cho video (phiên ITSKVN dọn 16:18–16:21, user chốt 2026-09-29):
 > `Frame1.jpg` = master MS (`s1-template-filltest-ms`, nồi trống + khay cá tuyết + túi SK);
