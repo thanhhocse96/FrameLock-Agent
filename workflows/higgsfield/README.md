@@ -1,7 +1,7 @@
 # workflows/higgsfield — chạy thử Higgsfield AI (platform dir, nơi duy nhất)
 
-> Version: 1.2.1 (2026-09-30) · Skill điều phối: `skills/higgsfield-run/SKILL.md`
-> Changelog: 1.1.0 — move script từ `work/higgsfield/*.py` · 1.2.0 — gộp toàn bộ `work/higgsfield/` (docs + `models/` + `INDEX.md`) vào đây, xóa `work/` · 1.2.1 — thêm mục báo cáo chi phí `/usage` → `analytics-models-db.csv`.
+> Version: 1.2.2 (2026-09-30) · Skill điều phối: `skills/higgsfield-run/SKILL.md`
+> Changelog: 1.1.0 — move script từ `work/higgsfield/*.py` · 1.2.0 — gộp toàn bộ `work/higgsfield/` (docs + `models/` + `INDEX.md`) vào đây, xóa `work/` · 1.2.1 — thêm mục báo cáo chi phí `/usage` → `analytics-models-db.csv` · 1.2.2 — ghi chú dữ liệu chi tiết nằm offline trong `.local`.
 
 ## ⚠️ Chạy trên WSL (Debian), không chạy Python Windows
 
@@ -78,6 +78,8 @@ Mục tiêu: user export report để soi model/prompt nào tốn tiền → tă
 3. Công thức tính lại (loại dòng excluded): `project_total_usd` = tổng `spend_usd` còn lại; `share_recalc_pct` = `spend_usd / project_total_usd * 100`; `per_req_usd` = `spend_usd / total_requests`. Kỳ 09/2026 mẫu: project 33.02 USD / 94 reqs — MiniMax H3 I2V 53.5%, Marketing Studio 39.4%.
 4. Ngưỡng review prompt (tham khảo, không cứng): MiniMax I2V >50% tổng → xem lại số clip/độ dài/duration; Marketing Studio retry nhiều → brief kỹ + test `1k/medium` trước; model nào `per_req_usd` cao bất thường → kiểm tra ref dài/fail NSFW.
 5. Insight rút ra (cách viết prompt tốt hơn) ghi vào `journal/YYYY-MM-DD-<slug>.md` mục Chi phí; luật lâu dài → promote vào `.context/PITFALLS.md` hoặc template.
+
+> Lưu ý: dữ liệu chi tiết từng lần chạy luôn offline — nằm rải trong `.local/work/higgsfield/<slug>/output/` của từng session (gitignored, không lên remote), nên hơi khó xài khi cần đối chiếu ngược bill với từng lần gen. CSV từ `/usage` chỉ cho tổng theo model/kỳ; muốn biết prompt/params nào tốn bao nhiêu thì đối chiếu thêm từng dòng `INDEX.md` + `params.json` tương ứng.
 
 ## Schema `params.json` (MiniMax H3)
 
