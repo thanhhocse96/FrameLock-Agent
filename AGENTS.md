@@ -34,6 +34,7 @@ Không load mặc định: `research/**/raws/*` (raw prompt text dài), `researc
 | 8 | **Ngôn ngữ** — phân tích tiếng Việt, prompt tiếng Anh: digest + mapping + hướng dẫn fill + `Index.md` viết tiếng Việt; quote prompt gốc giữ tiếng Anh; **prompt mẫu trong template và mọi prompt kết quả khi được yêu cầu gen đều xuất tiếng Anh** (biến template đặt tên EN `UPPER_SNAKE` như `[SUBJECT]`) |
 | 9 | **Bản quyền + nguồn** — mỗi raw ghi `Nguồn influencer/kênh + URL + ngày thu thập`; không re-post nguyên khối ra ngoài repo |
 | 10 | **workflows/ là nơi duy nhất cho chạy thử API, sản phẩm ở .local** — `workflows/<platform>/` commit `README.md` + `INDEX.md` + script chạy (`*.py`, key từ env, không chứa key) + `models/` (doc + params mẫu), chạy trên WSL; skill `higgsfield-run` điều phối. Mọi input đã chạy/output/log/key vào `.local/work/<provider>/<slug>/` (gitignored). Cấm API key trong `workflows/`, `research/`, `templates/` |
+| 11 | **Agent được mở pull request, mỗi PR một mối quan tâm + giải thích riêng** — xem `§6 Quy tắc pull request` |
 
 ## §3 Tension format
 
@@ -59,3 +60,10 @@ Không load mặc định: `research/**/raws/*` (raw prompt text dài), `researc
 - [ ] Experiment API mới đã thêm 1 dòng `workflows/<platform>/INDEX.md` (không commit media/key)?
 - [ ] Ngôn ngữ đúng (phân tích VI, prompt mẫu + prompt gen EN, biến `UPPER_SNAKE`)?
 - [ ] File `.context/` mới đúng subdir (không dump root)?
+
+## §6 Quy tắc pull request
+
+1. Agent được mở pull request.
+2. Mỗi PR một mối quan tâm (governance, template, workflows, docs… không gộp chung).
+3. Mỗi PR có giải thích riêng: làm gì, vì sao, đã kiểm tra gì (self-check `§5`, không lộ key/media).
+4. Không push/PR khi user nói "không có pr" trong phiên đó.

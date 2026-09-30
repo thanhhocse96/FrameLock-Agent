@@ -15,4 +15,5 @@
 | 9 | Paste API key vào `work/`/`research/`/`templates/` | Key chỉ từ env hoặc `.local/work/<provider>/.env` (gitignored); review diff trước commit |
 | 10 | Commit media/log/output vào `work/` | `work/` chỉ `README.md` + `INDEX.md`; sản phẩm → `.local/work/<provider>/<slug>/` (đã có guard trong `.gitignore`) |
 | 11 | Digest trỏ thẳng vào `.local/work/` (link local, người khác không mở được) | Promote: copy prompt vào `research/*/raws/` (ghi nguồn experiment) rồi mới digest |
-| 12 | Experiment thiếu `params.json` (model/seed/size) → không tái lập được | Schema tối thiểu: model+version, prompt_source, seed, size, duration_sec (`work/higgsfield/README.md`) |
+| 12 | Experiment thiếu `params.json` (model/seed/size) → không tái lập được | Schema tối thiểu: model+version, prompt_source, seed, size, duration_sec (`workflows/higgsfield/README.md`) |
+| 13 | Prompt motion dính từ mạnh (`slams`, `burst`) → cờ `nsfw`, mất request | Viết mềm (`pours`, `mist`, `settle`); tra `docs/nsfw-filter-words.md` trước khi gen; bị cờ thì đổi từ rồi mới chạy lại |
