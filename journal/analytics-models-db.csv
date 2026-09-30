@@ -1,0 +1,7 @@
+snapshot_date,period_start,period_end,timezone,model_key,display_name,provider_slug,operation_labels,total_requests,spend_usd,spend_share_src,project_total_usd_excl_genjutsu,project_total_req_excl_genjutsu,share_recalc_pct,per_req_usd,included_in_project_analysis,exclude_reason,source_file
+2026-09-30,2026-09-01,2026-09-30,UTC,minimax/h3/image-to-video,MiniMax H3,minimax,image2video,28,17.67,34.9,33.02,94,53.5,0.6311,TRUE,,analytics-models-2026-09-01-2026-09-30.csv
+2026-09-30,2026-09-01,2026-09-30,UTC,higgsfield/genjutsu/motion-transfer/v1.0,Genjutsu Motion Transfer,ttus,video2video,5,17.64,34.8,33.02,94,,,FALSE,clip ref dai - khong tinh vao project,analytics-models-2026-09-01-2026-09-30.csv
+2026-09-30,2026-09-01,2026-09-30,UTC,marketing-studio/image,Marketing Studio Image,openai,image_edit|text2image,44,13.00,25.7,33.02,94,39.4,0.2955,TRUE,,analytics-models-2026-09-01-2026-09-30.csv
+2026-09-30,2026-09-01,2026-09-30,UTC,minimax/h3/text-to-video,MiniMax H3,minimax,text2video,2,1.11,2.2,33.02,94,3.4,0.5550,TRUE,,analytics-models-2026-09-01-2026-09-30.csv
+2026-09-30,2026-09-01,2026-09-30,UTC,xai/grok-imagine-image-2.0,Grok Imagine 2.0,xai,image_edit|text2image,11,1.05,2.1,33.02,94,3.2,0.0955,TRUE,,analytics-models-2026-09-01-2026-09-30.csv
+2026-09-30,2026-09-01,2026-09-30,UTC,higgsfield-ai/soul/v2/standard,Soul 2,higgsfield,text2image,9,0.19,0.4,33.02,94,0.6,0.0211,TRUE,,analytics-models-2026-09-01-2026-09-30.csv

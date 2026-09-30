@@ -1,0 +1,16 @@
+{
+  "model": "marketing-studio/image",
+  "endpoint": "https://api.higgsfield.ai/marketing-studio/image",
+  "prompt": "Describe the edit here in English: keep what, change what, role of each ref",
+  "quality": "medium",
+  "image_urls": [
+    "<public_url_ref_1>"
+  ],
+  "moderation": "auto",
+  "resolution": "1k",
+  "aspect_ratio": "auto",
+  "enhance_prompt": false,
+  "prompt_source": "templates/drafts/<slug>.md (test draft)",
+  "keyframe": "K<int>-<mo-ta>-test",
+  "ref_roles": "ghi vai tro tung ref"
+}

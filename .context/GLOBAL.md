@@ -30,7 +30,7 @@ Thu thập cách influencer xây dựng prompt (ảnh + video) → reverse-engin
 - Prompt mẫu trong template và mọi prompt kết quả khi được yêu cầu gen đều xuất tiếng Anh (biến EN `UPPER_SNAKE`)
 - `workflows/<platform>/` commit script + docs + `INDEX.md` (chạy trên WSL); sản phẩm + key vào `.local/work/` (gitignored)
 - Mỗi raw có nguồn + URL + ngày thu thập
-
+- Agent được mở PR: mỗi PR một mối quan tâm + giải thích riêng (chi tiết `AGENTS.md` §6)
 ## `modules/` — cách dùng
 
 `.context/modules/` giữ invariant **theo module** (schema digest riêng ảnh/video, quy tắc template). Không duplicate schema đã có trong digest mẫu — module chỉ ghi delta/quyết định ngắn.

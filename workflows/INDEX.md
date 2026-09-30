@@ -22,7 +22,7 @@
 
 | Dir | Nội dung | Version |
 |-----|---------|---------|
-| `workflows/higgsfield/` | `README.md` + `INDEX.md` + `models/` + 5 script `.py` | 1.2.0 |
+| `workflows/higgsfield/` | `README.md` + `INDEX.md` + `models/` + 5 script `.py` | 1.2.1 |
 
 ## Quy ước chạy experiment (gộp từ `work/README.md`)
 

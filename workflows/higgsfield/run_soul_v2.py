@@ -1,15 +1,15 @@
 """Chay Soul 2 text-to-image qua Higgsfield API (stdlib-only).
 
-Doc model: work/higgsfield/models/soul-v2.md
+Doc model: workflows/higgsfield/models/soul-v2.md
 Quy uoc repo: work/ structure-only — script nay chi doc key tu env,
-moi san pham ghi vao .local/work/higgsfield/<slug>/.
+moi san pham ghi vao .local/workflows/higgsfield/<slug>/.
 
 Env:
   HF_KEY="KEY_ID:KEY_SECRET"  (Python + cURL, theo doc chinh thuc)
 
 Cach dung:
-  python work/higgsfield/run_soul_v2.py --params work/higgsfield/models/soul-v2.params.example.json --outdir .local/work/higgsfield/2026-09-28-soul-v2-k1
-  python work/higgsfield/run_soul_v2.py --params <params.json> --outdir <dir> --no-download
+  python workflows/higgsfield/run_soul_v2.py --params workflows/higgsfield/models/soul-v2.params.example.json --outdir .local/workflows/higgsfield/2026-09-28-soul-v2-k1
+  python workflows/higgsfield/run_soul_v2.py --params <params.json> --outdir <dir> --no-download
 """
 
 import argparse
@@ -78,7 +78,7 @@ def _download(url, dest, headers, timeout=300):
 def main():
     ap = argparse.ArgumentParser(description="Chay Soul 2 text-to-image (Higgsfield).")
     ap.add_argument("--params", required=True, help="Duong dan params.json")
-    ap.add_argument("--outdir", required=True, help="Thu muc .local/work/higgsfield/<slug>/")
+    ap.add_argument("--outdir", required=True, help="Thu muc .local/workflows/higgsfield/<slug>/")
     ap.add_argument("--no-download", action="store_true", help="Chi poll, khong tai anh")
     ap.add_argument("--poll-interval", type=int, default=5)
     ap.add_argument("--poll-timeout", type=int, default=600)
@@ -134,7 +134,7 @@ def main():
             dest = os.path.join(outdir, "output", "soul-v2-%d.jpg" % (i + 1))
             _download(url, dest, {"User-Agent": "curl/8.0"}, timeout=300)
             print("da tai: %s" % dest)
-    print("Duyet anh trong output/, chon keyframe roi them 1 dong vao work/higgsfield/INDEX.md (thu cong).")
+    print("Duyet anh trong output/, chon keyframe roi them 1 dong vao workflows/higgsfield/INDEX.md (thu cong).")
 
 
 if __name__ == "__main__":

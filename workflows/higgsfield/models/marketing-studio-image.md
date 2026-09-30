@@ -25,7 +25,7 @@
 | `aspect_ratio` | string | Không | `"auto"` | `auto`, `1:1`, `3:2`, `2:3`, `4:3`, `3:4`, `16:9`, `9:16`, `21:9` — keyframe video dùng `16:9` |
 | `enhance_prompt` | boolean | Không | `false` | `true` = preset mode (bắt buộc `preset_id` + ảnh sản phẩm, đắt hơn 10%) — chuỗi lùi dùng `false` |
 
-Ví dụ `params.json` đầy đủ: xem `marketing-studio-image.params.example.json` cùng thư mục.
+Ví dụ `params.json` đầy đủ: xem `marketing-studio-image.params.example.json` (bản chốt `2k`/`high`) và `marketing-studio-image.params.test.json` (bản test rẻ `1k`/`medium` — dùng mặc định cho nháp, user chốt 2026-09-29) cùng thư mục.
 Script repo: `../run_marketing_studio_image.py` (stdlib, đọc `HF_KEY`, poll tự động, tải ảnh về `.local/`).
 
 ## So kèo với Grok (test K6-back cùng điều kiện)

@@ -5,7 +5,7 @@ Quy uoc repo: file local -> presigned upload -> public_url lam image_url/video_u
 KHONG gui key vao presigned storage URL.
 
 Cach dung:
-  python work/higgsfield/upload_asset.py --file .local/work/higgsfield/assets/tui-ca-duc.png --content-type image/png
+  python workflows/higgsfield/upload_asset.py --file .local/workflows/higgsfield/assets/tui-ca-duc.png --content-type image/png
   -> in ra public_url (copy vao params.json image_urls)
 """
 

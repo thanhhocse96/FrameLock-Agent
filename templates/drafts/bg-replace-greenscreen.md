@@ -1,10 +1,10 @@
 # Template: Background Replace trên nhân vật phông xanh (draft)
 
 - Dùng cho: ảnh — thay nền hoàn toàn, giữ nguyên nhân vật chụp phông xanh
-- Nguồn pattern: chat 2026-09-29 (prompt gốc lướt YouTube, mất URL — chưa có `research/images/digests/` thật, nên giữ `drafts/` theo PITFALLS #6)
+- Nguồn pattern: chat 2026-09-29 (prompt gốc kênh YouTube https://www.youtube.com/@Justinn_james — chưa rõ video cụ thể, chưa có `research/images/digests/` thật, nên giữ `drafts/` theo PITFALLS #6)
 - Biến (EN `UPPER_SNAKE`): `[SUBJECT_LOCK]`, `[ENVIRONMENT_DETAILS]`, `[LIGHT_DIRECTION]`, `[LIGHT_COLOR_TEMP]`, `[LIGHT_INTENSITY]`, `[AMBIENT_FILL]`, `[RIM_LIGHT]`, `[SHADOW_GROUNDING]`, `[ATMOSPHERE]`, `[LENS_TYPE]`, `[DEPTH_OF_FIELD]`, `[COLOR_GRADE]`
 
-> Prompt gốc (giữ tiếng Anh, nguồn YouTube mất URL):
+> Prompt gốc (giữ tiếng Anh, nguồn kênh YouTube https://www.youtube.com/@Justinn_james):
 > `Transform this image into a [NEW LOCATION / ENVIRONMENT]. Keep the subject's face, pose, and clothing exactly the same. Replace the background completely with [ENVIRONMENT DETAILS]. Match the lighting on the subject to the new environment so it feels natural and realistic. Add [SNOW, RAIN, etc.] (if needed). Use a [LENS TYPE] with [SHALLOW or DEEP DEPTH OF FIELD]. Ensure realistic lighting, shadows, and color that match the scene. Style: cinematic, high-end, realistic (not stylized or cartoon).`
 
 ## Prompt mẫu (tiếng Anh, fill sẵn 1 ví dụ minh họa — chưa phải digest thật)

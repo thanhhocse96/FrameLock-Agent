@@ -28,7 +28,8 @@ Scaffold hệ governance + thư mục rỗng đúng pipeline, chưa cần data t
 - [ ] 1 digest ảnh link về raw + 1 dòng `mapping.md`
 - [ ] 1 raw video + 1 digest video + 1 dòng `mapping.md`
 - [ ] 1 template fill thử từ digest + `Index.md` trỏ tới
-- [ ] 1 experiment higgsfield thử (sản phẩm ở `.local/work/higgsfield/<slug>/` + 1 dòng `workflows/higgsfield/INDEX.md`)
+- [x] 1 experiment higgsfield thử (sản phẩm ở `.local/work/higgsfield/<slug>/` + 1 dòng `workflows/higgsfield/INDEX.md`)
+- [x] Chuỗi clip Cá đục kho tiêu chốt (`workflows/higgsfield/CHAIN-LOCKED.md`, user chốt 2026-09-29)
 - [ ] User acceptance: tìm lại được digest qua mapping, dùng được template
 
 ## M3 — Mở rộng + quy ước từ vựng (backlog)

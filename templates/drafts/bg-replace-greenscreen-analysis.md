@@ -1,7 +1,7 @@
 # Phân tích: Background Replace trên nhân vật phông xanh
 
 - Ngày: 2026-09-29
-- Prompt gốc: lướt YouTube, mất URL (không lập `research/images/raws/` để tránh digest mồ côi — PITFALLS #1)
+- Prompt gốc: kênh YouTube https://www.youtube.com/@Justinn_james, chưa rõ video cụ thể (không lập `research/images/raws/` để tránh digest mồ côi — PITFALLS #1)
 - Draft kèm theo: `./bg-replace-greenscreen.md`
 - Trạng thái: chờ bạn gọi để thử nghiệm fill biến
 
