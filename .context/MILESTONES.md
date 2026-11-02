@@ -13,12 +13,13 @@ Quy trình mỗi milestone: scaffold → user duyệt schema → thêm data th�
 ## M1 — Bootstrap context system ⬅ CURRENT
 
 Scaffold hệ governance + thư mục rỗng đúng pipeline, chưa cần data thật.
+Compact image-only từ 2026-10-09 (D-010): chỉ giữ nhánh ảnh, xóa video/API.
 
 - [x] `AGENTS.md` (§0–§5: startup, invariants, routing, self-check)
 - [x] `.context/` (README, GLOBAL, MILESTONES, TENSIONS_OPEN/ACTIVE, PITFALLS, modules/*)
-- [x] `research/images/` + `research/videos/` (`raws/`, `digests/`, `mapping.md` seed + schema)
-- [x] `templates/` (`images/`, `videos/`, `drafts/`, `Index.md`)
-- [x] `work/` structure-only (`README.md`, `higgsfield/README.md` + `INDEX.md`; sản phẩm ở `.local/work/`)
+- [x] `research/images/` (`raws/`, `digests/`, `mapping.md` seed + schema)
+- [x] `templates/` (`images/`, `drafts/`, `Index.md`)
+- [x] `workflows/` research-only (`add-raw.md`, `digest.md`, `template.md`, `INDEX.md`)
 - [x] `docs/README.md` + `README.md` + `.gitignore` (`.local/`)
 - [ ] User duyệt M1 (schema digest/mapping/template OK) → sang M2
 
@@ -26,15 +27,12 @@ Scaffold hệ governance + thư mục rỗng đúng pipeline, chưa cần data t
 
 - [ ] 1 raw ảnh thật (`research/images/raws/`) có nguồn + URL + ngày
 - [ ] 1 digest ảnh link về raw + 1 dòng `mapping.md`
-- [ ] 1 raw video + 1 digest video + 1 dòng `mapping.md`
 - [ ] 1 template fill thử từ digest + `Index.md` trỏ tới
-- [x] 1 experiment higgsfield thử (sản phẩm ở `.local/work/higgsfield/<slug>/` + 1 dòng `workflows/higgsfield/INDEX.md`)
-- [x] Chuỗi clip Cá đục kho tiêu chốt (`workflows/higgsfield/CHAIN-LOCKED.md`, user chốt 2026-09-29)
 - [ ] User acceptance: tìm lại được digest qua mapping, dùng được template
 
 ## M3 — Mở rộng + quy ước từ vựng (backlog)
 
-- [ ] ≥5 digest mỗi bên (ảnh/video), mapping có từ khóa kỹ thuật/chủ đề/model ổn định
+- [ ] ≥5 digest ảnh, mapping có từ khóa kỹ thuật/chủ đề/model ổn định
 - [ ] Taxonomy từ khóa chốt vào `TENSIONS_ACTIVE.md`
 
 ---

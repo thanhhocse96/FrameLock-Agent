@@ -1,6 +1,6 @@
 ---
 name: add-raw
-description: Copy an influencer prompt verbatim into research images or videos raws with source URL and date. Use when adding a raw prompt, thu thap prompt, or starting the raw-to-digest pipeline.
+description: Copy an influencer image prompt verbatim into research images raws with source URL and date. Use when adding a raw prompt, thu thap prompt, or starting the raw-to-digest pipeline.
 metadata:
   version: "1.0.0"
   updated: "2026-09-29"
@@ -12,7 +12,7 @@ Thu thập prompt nguyên văn influencer vào kho `research/`. Raw là text, b�
 
 ## Quy tắc (từ AGENTS.md + PITFALLS.md)
 
-- `research/images/raws/<slug>.md` hoặc `research/videos/raws/<slug>.md` — chỉ `.md`/`.txt`, không media binary (media → `.local/`).
+- `research/images/raws/<slug>.md` — chỉ `.md`/`.txt`, không media binary (media mẫu → `.local/`).
 - Đầu file bắt buộc: nguồn influencer/kênh + URL + ngày thu thập (`YYYY-MM-DD`) + model (nếu raw nói rõ, không đoán).
 - Quote prompt gốc giữ tiếng Anh. Sửa lỗi copy → file mới `<slug>_v2.md`, không sửa file cũ.
 - Xong raw thì dừng — digest là việc của skill `make-digest`.
@@ -34,6 +34,6 @@ Thu thập prompt nguyên văn influencer vào kho `research/`. Raw là text, b�
 
 ## Các bước
 
-1. Hỏi user: ảnh hay video, slug nào, nguồn/URL/ngày nào (nếu thiếu).
+1. Hỏi user: slug nào, nguồn/URL/ngày nào (nếu thiếu).
 2. Ghi file raw đúng schema trên (UTF-8 không BOM).
 3. Báo đường dẫn raw để bước digest trỏ về.
