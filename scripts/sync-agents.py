@@ -1,14 +1,13 @@
 """Mirror canonical skills/ + workflows/ to OpenCode / Claude Code / Codex paths.
 
 Single source of truth: skills/<name>/SKILL.md + workflows/*.md (repo root).
-Executable scripts live per-platform in workflows/<platform>/*.py (NOT mirrored).
 Versions tracked in workflows/INDEX.md; skill frontmatter carries metadata.version.
 Mirrors (identical content, committed so all tools work on fresh clone):
   skills/<n>/SKILL.md -> .agents/skills/<n>/SKILL.md   (Codex native, OpenCode auto-loads)
-                      -> .claude/skills/<n>/SKILL.md   (Claude Code native)
-                      -> .opencode/skills/<n>/SKILL.md (OpenCode native)
+                       -> .claude/skills/<n>/SKILL.md   (Claude Code native)
+                       -> .opencode/skills/<n>/SKILL.md (OpenCode native)
   workflows/*.md      -> .opencode/commands/*.md       (OpenCode slash)
-                      -> .claude/commands/*.md         (Claude slash, legacy format)
+                       -> .claude/commands/*.md         (Claude slash, legacy format)
 
 Codex has no commands dir: skills cover it (invoked as $skill-name).
 Run: python scripts/sync-agents.py  (also: --check for CI)
@@ -20,9 +19,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-SKILLS = ["add-raw", "make-digest", "make-template", "higgsfield-run"]
+SKILLS = ["add-raw", "make-digest", "make-template", "video-delta-analysis", "write-video-script", "direct-ai-performance"]
 SKILL_TARGETS = [".agents/skills", ".claude/skills", ".opencode/skills"]
-WORKFLOWS = ["add-raw.md", "digest.md", "template.md", "hf-run.md"]
+WORKFLOWS = ["add-raw.md", "digest.md", "template.md"]
 CMD_TARGETS = [".opencode/commands", ".claude/commands"]
 
 

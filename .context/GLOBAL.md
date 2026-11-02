@@ -4,20 +4,18 @@
 
 ## Mục tiêu dự án
 
-Thu thập cách influencer xây dựng prompt (ảnh + video) → reverse-engineer thành công thức tái dùng.
+Thu thập cách influencer xây dựng prompt ảnh → reverse-engineer thành công thức tái dùng.
 
-- **Input:** raw prompt text copy nguyên văn (không phải ảnh/video binary).
+- **Input:** raw prompt text copy nguyên văn (không phải ảnh binary).
 - **Output:** digest phân tích + mapping index + template trong `templates/`.
-- **Không phải:** kho media, tool generate ảnh/video, re-post nội dung bản quyền.
+- **Không phải:** kho media, tool generate ảnh, re-post nội dung bản quyền.
 
 ## Module index
 
 | Module | Data path | Context note |
 |--------|-----------|--------------|
 | research-images | `research/images/{raws/,digests/,mapping.md}` | `.context/modules/research-images.md` |
-| research-videos | `research/videos/{raws/,digests/,mapping.md}` | `.context/modules/research-videos.md` |
-| templates | `templates/{images/,videos/,drafts/,Index.md}` | `.context/modules/templates.md` |
-| work-apis | `workflows/<platform>/{README.md,INDEX.md,models/,*.py}` (scripts chạy trên WSL) + `.local/work/<provider>/<slug>/` (sản phẩm) | `.context/modules/work-apis.md` |
+| templates | `templates/{images/,drafts/,Index.md}` | `.context/modules/templates.md` |
 | docs human | `docs/README.md` | Chỉ load khi task docs |
 
 ## Invariants (tóm tắt — chi tiết ở `AGENTS.md` §2)
@@ -28,7 +26,6 @@ Thu thập cách influencer xây dựng prompt (ảnh + video) → reverse-engin
 - Template merge chỉ khi đã test fill từ digest thật + `Index.md` trỏ tới
 - Digest/mapping/hướng dẫn fill/`Index.md` tiếng Việt; quote prompt gốc giữ tiếng Anh
 - Prompt mẫu trong template và mọi prompt kết quả khi được yêu cầu gen đều xuất tiếng Anh (biến EN `UPPER_SNAKE`)
-- `workflows/<platform>/` commit script + docs + `INDEX.md` (chạy trên WSL); sản phẩm + key vào `.local/work/` (gitignored)
 - Mỗi raw có nguồn + URL + ngày thu thập
 - Agent được mở PR: mỗi PR một mối quan tâm + giải thích riêng (chi tiết `AGENTS.md` §6)
 ## `modules/` — cách dùng

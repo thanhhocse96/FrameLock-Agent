@@ -1,4 +1,6 @@
-# Template: Background Replace trên nhân vật phông xanh (draft)
+# Template: Background Replace trên nhân vật phông xanh (draft — ĐÃ PROMOTE)
+
+> Đã promote 2026-10-04 thành `../images/bg-replace-video-opening.md` (nguồn `research/images/digests/bg-replace-greenscreen.md`). File này giữ lại làm bản phân tích gốc.
 
 - Dùng cho: ảnh — thay nền hoàn toàn, giữ nguyên nhân vật chụp phông xanh
 - Nguồn pattern: chat 2026-09-29 (prompt gốc kênh YouTube https://www.youtube.com/@Justinn_james — chưa rõ video cụ thể, chưa có `research/images/digests/` thật, nên giữ `drafts/` theo PITFALLS #6)
