@@ -10,8 +10,12 @@ Ngày 2026-10-28, user chốt thêm nghiên cứu Foyege phục vụ kịch bả
 
 | ID | Nguồn | Vai trò / trạng thái |
 |---|---|---|
-| DA-PROTOCOL | [State Delta v0.2](delta-analysis/protocol.md) | Phương pháp legacy; ISOLATE → DIFF → PROVE |
+| DA-PROTOCOL | [State Delta v0.2](delta-analysis/protocol.md) | Phương pháp phân tích delta, đối chiếu output với spec và đề xuất sửa cho retry; ISOLATE → DIFF → PROVE; tiếp tục tham chiếu tại chỗ |
 | DA-RESEARCH | [Research nền tảng](delta-analysis/research-notes.md) | Nguồn ngoài và giả thuyết transfer; không là run pass |
+| TEMPO-CONTINUITY-01 | [Nhịp, continuity và chi phí cinematic](methods/cinematic-tempo-continuity-cost.md) | 2026-11-02; phản biện khóa endpoint, audit tốc độ/seam và thiết kế kiểm chứng B2B/B2C; user báo lỗi ở hai provider; proposed-unverified, chưa generation mới |
+| MOTION-WORKFLOW-01 | [Animatic, Blender và motion transfer](methods/animatic-blender-motion-transfer-research.md) | 2026-11-03; user yêu cầu mở rộng nghiên cứu: Higgsfield/Seedance, animator/producer, prompt, control, retry và chi phí; desk research có phân hạng nguồn, chưa generation/benchmark |
+| NO-VIDEO-REF-01 | [Workflow dựng theo shot, sinh từ ảnh và prompt](methods/no-video-reference-workflow.md) | 2026-11-03; đề xuất 0.1.0 theo user, không video conditioning; animatic nội bộ, chọn endpoint có chủ đích, dựng/QA từng shot, ưu tiên ít retry; chưa production pass |
+| VIDEO-ARCH-01 | [Ghi chú workflow và cấu trúc file trước triển khai](methods/video-workflow-architecture-proposal.md) | 2026-11-03; lưu theo yêu cầu user: workflow theo nhiệm vụ, adapter theo model/provider, metadata năng lực và walkthrough hai ảnh → generation → delta → retry; chưa triển khai runner/API hoặc thay đổi layout |
 | FOYEGE-01 | [Digest bằng chứng Foyege](foyege/foyege-evidence-digest.md) | Research ưu tiên cho B2B; có text copy Appendix A/B/C do user bổ sung, tách khỏi template tái tạo; hai skill 0.1.0 nháp và bài thử văn bản; chưa xác minh workflow Draconia hoặc video output |
 
 Method mới dùng `methods/<method-slug>.md`, tạo khi có nội dung dùng chung thực sự.
